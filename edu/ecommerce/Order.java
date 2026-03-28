@@ -1,7 +1,5 @@
 package edu.ecommerce;
 
-import java.util.ArrayList;
-
 public class Order {
     public String orderId;
     public String customerName;
@@ -13,9 +11,9 @@ public class Order {
     }
 
     static class OrderItem{
-        private String namaProduk;
-        private double price;
-        private int quantity;
+        final String namaProduk;
+        final double price;
+        final int quantity;
 
         public OrderItem(String namaProduk, double price, int quantity){
             this.namaProduk = namaProduk;
@@ -36,7 +34,7 @@ public class Order {
         }
     }
 
-    public double hitungTotal(ArrayList<OrderItem> items){
+    public double hitungTotal(OrderItem[] items){
         double total = 0;
 
         for (OrderItem item : items) {
@@ -46,7 +44,7 @@ public class Order {
         return total;
     }
 
-    public void getInfo(ArrayList<OrderItem> items){
+    public void tampilkanRincian(OrderItem[] items){
         System.out.println("Nama Pelanggan: "+this.customerName);
         System.out.println("ID Order: "+this.orderId);
 
