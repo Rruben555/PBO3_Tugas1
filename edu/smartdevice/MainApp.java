@@ -1,6 +1,6 @@
 package edu.smartdevice;
 
-public class Main {
+public class MainApp {
     public static void main(String[] args){
         SmartWatch smartWatch=new SmartWatch(70, "");
         smartWatch.getInfo();
