@@ -1,6 +1,6 @@
 package edu.ecommerce;
 
-public class Main {
+public class MainApp {
     public static void main(String[] args){
         Order.OrderItem[] items = new Order.OrderItem[3];
         Order order=new Order("1", "Andi");
