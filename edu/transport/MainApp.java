@@ -1,6 +1,6 @@
 package edu.transport;
 
-public class Main {
+public class MainApp {
     public static void main(String[] args){
         double jarak=120;
         Mobil mobil=new Mobil("Toyota",60);
