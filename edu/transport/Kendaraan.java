@@ -21,7 +21,7 @@ public abstract class Kendaraan {
 
     public void getInfo(double jarak){
         System.out.println("Nama: "+this.nama);
-        System.out.println("Waktu Tempuh: "+hitungWaktuTempuh(jarak)+" jam\n");
+        System.out.println("Waktu Tempuh: "+String.format("%.2f", hitungWaktuTempuh(jarak))+" jam\n");
     }
 
 }
