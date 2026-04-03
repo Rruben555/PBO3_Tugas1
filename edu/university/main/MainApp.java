@@ -14,7 +14,7 @@ public class MainApp {
 
         Mahasiswa mahasiswa1=new Mahasiswa("1", "Ade", 3.7);
         Mahasiswa mahasiswa2=new Mahasiswa("2", "Budi", 2.7);
-        Mahasiswa mahasiswa3=new Mahasiswa("3", "Ade", 1.7);
+        Mahasiswa mahasiswa3=new Mahasiswa();
 
         mahasiswa.add(mahasiswa1);
         mahasiswa.add(mahasiswa2);
@@ -23,6 +23,9 @@ public class MainApp {
         for (Mahasiswa mhs : mahasiswa) {
             mhs.getInfo();
         }
+
+        mahasiswa3.updateData("3", "Ade", 1.7);
+        mahasiswa3.getInfo();
 
         //2
         ArrayList<Pegawai> pegawai = new ArrayList<Pegawai>();
