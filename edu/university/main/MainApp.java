@@ -44,8 +44,6 @@ public class MainApp {
             p.getInfo();
         }
 
-        //3
-
     }
 
 }
