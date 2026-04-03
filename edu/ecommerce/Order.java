@@ -54,7 +54,7 @@ public class Order {
             System.out.print("  Rp."+itemList.getSubtotal()+"\n");
         }
 
-        System.out.println("Total: "+this.hitungTotal(items));
+        System.out.println("Total: Rp."+this.hitungTotal(items));
 
     }
 }
